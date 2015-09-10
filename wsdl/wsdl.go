@@ -1,9 +1,9 @@
 package wsdl
-
+ 
 import (
 	"encoding/xml"
 
-	"code.google.com/p/wsdl-go/xsd"
+	"github.com/charonuguid/wsdl-go/xsd"
 )
 
 type Definitions struct {

@@ -10,8 +10,8 @@ import (
 	"strings"
 	"text/template"
 
-	"code.google.com/p/wsdl-go/wsdl"
-	"code.google.com/p/wsdl-go/xsd"
+	"github.com/charonuguid/wsdl-go/wsdl"
+	"github.com/charonuguid/wsdl-go/xsd"
 )
 
 var wsdlFile = flag.String("w", "", "WSDL file with full path")
@@ -72,8 +72,6 @@ type TemplateData struct {
 
 var data TemplateData
 
-// wsdl -w="C:\Temp\wsdl\CartaoEndpointService.wsdl" -x="C:\Temp\wsdl\CartaoEndpointService_schema1.xsd" -p="main" -o="C:\Temp\service.go"
-// wsdl -w="C:\Temp\wsdl\authendpointservice.wsdl" -x="C:\Temp\wsdl\AuthEndpointService_schema1.xsd" -p="login" -o="C:\Temp\auth_service.go"
 func main() {
 	flag.Parse()
 
